@@ -32,7 +32,7 @@ jobs:
       - name: Package Lambda function
         run: |
           cd backend
-          zip -r function.zip VisitorCountFunction.py  
+          zip -r function.zip lambda_function.py 
 
       # Update the Lambda function code
       - name: Update Lambda function code
