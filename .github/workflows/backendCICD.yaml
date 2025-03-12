@@ -37,4 +37,4 @@ jobs:
       # Update the Lambda function code
       - name: Update Lambda function code
         run: |
-          aws lambda update-function-code --function-name VisitorCountFunction --zip-file fileb://backend/function.zip
+          aws lambda update-function-code --function-name VisitorCounterFunction --zip-file fileb://backend/function.zip
