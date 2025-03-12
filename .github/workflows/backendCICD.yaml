@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - main  # Trigger on push to the main branch
-    paths:
-      - 'backend/**'  # Trigger the workflow only if there are changes in the 'backend' directory
-  workflow_dispatch:  # Allow manual triggering of the workflow
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
