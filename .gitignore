@@ -5,3 +5,4 @@ backend/lamda_function.py.zip
 .terraform/terraform.tfstate.backup
 .terraform/.terraform.lock.hcl
 .terraform/.terraform.lock.info
+backend/lamda_function.py.zip
