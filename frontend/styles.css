@@ -1,0 +1,136 @@
+/* General Layout and Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #4f5d73, #64748b);
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+}
+
+header a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 3rem;
+}
+
+section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #4f5d73;
+}
+
+section p, section ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #64748b;
+    font-size: 1.5rem;
+}
+
+/* Project List Styling */
+ul li strong {
+    font-weight: bold;
+    color: #2d3748;
+}
+
+ul li a {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer / Visitor Count */
+section:last-of-type {
+    text-align: center;
+}
+
+#visitor-count {
+    font-size: 1.5rem;
+    color: #2d3748;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    section h3 {
+        font-size: 1.5rem;
+    }
+
+    section p, section ul {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,40 @@
+name: Deploy to Lambda
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Set up AWS CLI with IAM credentials
+      - name: Set up AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      # Install dependencies if necessary (e.g., for Python)
+      - name: Install dependencies
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r backend/requirements.txt  
+      # Package the Lambda function code (from backend/VisitorCountFunction.py)
+      - name: Package Lambda function
+        run: |
+          cd backend
+          zip -r function.zip VisitorCountFunction.py  
+
+      # Update the Lambda function code
+      - name: Update Lambda function code
+        run: |
+          aws lambda update-function-code --function-name VisitorCountFunction --zip-file fileb://backend/function.zip
