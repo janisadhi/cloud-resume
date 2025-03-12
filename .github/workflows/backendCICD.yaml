@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main  # Trigger on push to the main branch
+    paths:
+      - backend/**  # Trigger only when changes are made in the backend directory
+  workflow_dispatch:  # Allow manual triggering of the workflow
 
 jobs:
   deploy:
