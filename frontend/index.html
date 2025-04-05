@@ -1,69 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janis Adhikari - Resume</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Janis Adhikari - Resume</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>JANIS ADHIKARI</h1>
-            <h2>DevOps Engineer</h2>
-            <p>Tarkeshwor, Kathmandu, Nepal</p>
-            <p>Email: <a href="mailto:janisadhikari@gmail.com">janisadhikari@gmail.com</a></p>
-            <p>Phone: 9849469406</p>
-            <p><a href="https://www.linkedin.com/in/janis-adhikari-053347263" target="_blank">LinkedIn</a> | 
-               <a href="https://github.com/janisadhi" target="_blank">GitHub</a> | 
-               <a href="https://janis.com.np" target="_blank">Portfolio</a></p>
-        </header>
-        
-        <section>
-            <h3>About Me</h3>
-            <p>Enthusiastic DevOps learner with skills in cloud, CI/CD, and containers. Passionate about automation and problem-solving. Looking for an internship to gain hands-on experience and grow in the field.</p>
-        </section>
-        
-        <section>
-            <h3>Skills</h3>
-            <ul>
-                <li>Docker, Kubernetes, Helm Chart</li>
-                <li>CI/CD: Jenkins, GitHub Actions</li>
-                <li>Cloud: AWS</li>
-                <li>Provisioning: Ansible, Terraform</li>
-                <li>Linux, VirtualBox, Vagrant</li>
-                <li>Monitoring: Grafana, Prometheus</li>
-                <li>Git, GitHub</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h3>Education</h3>
-            <p><strong>Bachelor in Information Technology</strong> - NCMT College (2022 - Present)</p>
-            <p><strong>Intermediate (+2) Science</strong> - Canvas International College (2020 - 2022)</p>
-        </section>
-        
-        <section>
-            <h3>Projects</h3>
-            <ul>
-                <li><strong>Wanderlust</strong> - 3-Tier Application (Node.js, React, MongoDB, AWS EKS, Jenkins, Nginx)</li>
-                <li><strong>10-Tier E-commerce Application</strong> - AWS EKS, GitHub Actions, Docker</li>
-                <li><strong>WordPress Deployment</strong> - Docker Compose, GitHub Actions, Nginx</li>
-            </ul>
-        </section>
-        
-        <section>
-            <h3>Certifications</h3>
-            <p>DevOps Engineer - Mindrisers Institute of Technology</p>
-        </section>
-        
-        <section>
-            <h3>Visitor Counter</h3>
-            <p>Visitors: <span id="visitor-count">Loading...</span></p>
-        </section>
-    </div>
-    
-    <script src="scripts.js"></script>
+  <div class="container">
+    <header>
+      <h1>JANIS ADHIKARI</h1>
+      <h2>DevOps Engineer (Fresher)</h2>
+      <p>Tarkeshwor, Kathmandu, Nepal</p>
+      <p>Email: <a href="mailto:janisadhikari@gmail.com">janisadhikari@gmail.com</a></p>
+      <p>Phone: +977 9849469406</p>
+      <p>
+        <a href="https://www.linkedin.com/in/janisadhi" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/janisadhi" target="_blank">GitHub</a> |
+        <a href="https://janis.com.np" target="_blank">Portfolio</a>
+      </p>
+    </header>
+
+    <section>
+      <h3>Profile</h3>
+      <p>DevOps Engineer (Fresher) with a strong foundation in CI/CD, Kubernetes, AWS, and Terraform. Passionate about automation, cloud infrastructure, and monitoring, eager to learn and implement best DevOps practices.</p>
+    </section>
+
+    <section>
+      <h3>Skills</h3>
+      <ul>
+        <li>Docker, Kubernetes, Helm, Docker Compose</li>
+        <li>CI/CD: Jenkins, GitHub Actions</li>
+        <li>Cloud: AWS</li>
+        <li>Provisioning: Ansible, Terraform</li>
+        <li>Monitoring: Prometheus, Grafana</li>
+        <li>Dev & Infra: Python, React.js, Django, Java, Shell Scripting</li>
+        <li>Version Control: Git, GitHub</li>
+        <li>Linux, VirtualBox, Vagrant</li>
+        <li>WordPress Deployment</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Education</h3>
+      <ul>
+        <li><strong>Bachelor in Information Technology</strong> – NCMT College (2022 - 2026)</li>
+        <li><strong>Intermediate (+2) Science</strong> – Canvas Int’l College (2020 - 2022)</li>
+        <li><strong>Secondary Level Education (SEE)</strong> – Bageshwaree Secondary School (2020)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Projects</h3>
+      <ul>
+        <li>
+          <strong>Microservices E-commerce Deployment</strong> – 
+          <a href="https://github.com/janisadhi/Microservices-deployment" target="_blank">GitHub</a><br/>
+          <em>10-Tier E-commerce Application deployed to AWS EKS.</em><br/>
+          Provisioned infrastructure using Terraform. Each microservice had its own CI/CD workflow in GitHub Actions. Configured monitoring with Prometheus and Grafana. Used Nginx as Ingress Controller.
+        </li>
+
+        <li>
+          <strong>Wanderlust</strong> – 
+          <a href="https://github.com/janisadhi/wanderlust_cicd" target="_blank">GitHub</a><br/>
+          <em>3-Tier full-stack application built using Node.js (backend), React.js (frontend), and MongoDB (database).</em><br/>
+          Integrated Jenkins to automate Docker builds and Kubernetes deployments on AWS EKS. Nginx handled routing and load balancing. Project focused on automating the full deployment lifecycle.
+        </li>
+
+        <li>
+          <strong>Cloud Resume Challenge</strong> – 
+          <a href="https://janisadhi.me" target="_blank">Live</a> | 
+          <a href="https://github.com/janisadhi/cloud-resume" target="_blank">GitHub</a><br/>
+          <em>Built a cloud-hosted resume website using AWS services.</em><br/>
+          Frontend hosted on S3 with HTTPS via CloudFront. Visitor count is handled using API Gateway, Lambda (Python), and DynamoDB. Infrastructure managed using Terraform. CI/CD implemented for both frontend and backend.
+        </li>
+
+        <li>
+          <strong>YouTube Clone Deployment</strong> – 
+          <a href="https://github.com/janisadhi/youtube" target="_blank">GitHub</a><br/>
+          <em>Deployed a full YouTube clone application with advanced DevOps stack.</em><br/>
+          Used Jenkins and GitHub Actions for CI/CD. Infrastructure provisioned with Terraform, deployed to AWS EKS. PostgreSQL used for database. Integrated Prometheus and Grafana for observability.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Achievements</h3>
+      <ul>
+        <li>Developed “Electro Map” in a 48-hour hackathon by Codenature</li>
+        <li>Successfully deployed 20+ applications</li>
+        <li>Completed the entire DevOps Roadmap from Roadmap.sh</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Certifications</h3>
+      <ul>
+        <li>DevOps Training – Mind Risers Consortium
+          (<a href="https://www.mindrisers.com.np/certificate/validate/MR-81015-DV" target="_blank">Certificate</a>)
+        </li>
+        <li>AWS Cloud Quest: Cloud Practitioner – AWS Training & Certification
+          (<a href="https://www.credly.com/badges/6fd4a8a7-4b9f-4ebf-b72f-df1f6159577b/linked_in_profile" target="_blank">Certificate</a>)
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Languages & Interests</h3>
+      <p><strong>Languages:</strong> English, Nepali</p>
+      <p><strong>Interests:</strong> Cloud Computing, Automation</p>
+    </section>
+
+    <section>
+      <h3>Visitor Counter</h3>
+      <p>Visitors: <span id="visitor-count">Loading...</span></p>
+    </section>
+    <section>
+        <h3>Download CV</h3>
+        <a href="JANIS ADHIKARI-CV-latest.pdf" download class="download-btn">📄 Download PDF</a>
+      </section>
+      
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
- 
